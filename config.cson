@@ -1,0 +1,22 @@
+"*":
+  core:
+    themes: [
+      "seti-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontSize: 12
+    invisibles:
+      eol: " "
+    preferredLineLength: 180
+    scrollPastEnd: true
+    scrollSensitivity: 30
+    showIndentGuide: true
+    showInvisibles: true
+    useShadowDOM: false
+  "exception-reporting":
+    userId: "6154104f-b6b9-1dfa-6fb1-6c4db5d01d2b"
+  "one-dark-ui": {}
+  "one-light-ui": {}
+  welcome:
+    showOnStartup: false

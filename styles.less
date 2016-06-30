@@ -1,0 +1,167 @@
+// /*
+//  * Your Stylesheet
+//  *
+//  * This stylesheet is loaded when Atom starts up and is reloaded automatically
+//  * when it is changed and saved.
+//  *
+//  * Add your own CSS or Less to fully customize Atom.
+//  * If you are unfamiliar with Less, you can read more about it here:
+//  * http://lesscss.org
+//  */
+//
+//
+// /*
+//  * Examples
+//  * (To see them, uncomment and save)
+//  */
+//
+
+atom-panel-container .project-root > .header {
+  background: #2c4556;
+  height: 60px;
+  position: fixed;
+  z-index: 99;
+  top: 0px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+  &:hover {
+    background: #2c4556;
+  }
+  .icon-repo {
+    color: #fff !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    &:before {
+      margin-right: 10px !important;
+      background: url('atom://seti-ui/icons/project.svg') no-repeat !important;
+    }
+  }
+}
+
+atom-panel-container {
+  border: 0px !important;
+  &.project-root {
+    border: 0px !important;
+  }
+  .tree-view-resizer {
+    .tree-view-scroller {
+      .full-menu {
+        margin-top: 60px;
+      }
+      .list-tree, .tree-view {
+        background: #eee !important;
+        .project-root {
+          padding-top: 18px;
+          .header {
+            // background: none;
+            &:before {
+              color: #555;
+            }
+          }
+        }
+        .directory {
+          cursor: pointer;
+          &.selected {
+            &:before {
+              background: #fff !important;
+            }
+          }
+          .icon {
+            color: #000;
+            &:before {
+              box-shadow: none;
+              background: none;
+            }
+            &:before {
+              box-shadow: 0px 0px 2px #ddd;
+              background: #fff;
+            }
+            &.icon-file-directory:before {
+              background: none !important;
+              box-shadow: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list-item {
+  &.selected {
+    &:before {
+      background: #fff !important;
+    }
+  }
+}
+
+atom-workspace-axis {
+  border: none !important;
+  z-index: 999999 !important;
+  box-shadow: none !important;
+}
+
+.tab-bar {
+  height: 60px !important;
+  background: #2c4556 !important;
+  padding-left: 30px;
+  border: 0px !important;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  .tab {
+    height: 35px !important;
+    padding: 4px 5px 10px 15px !important;
+    background: #ddd !important;
+    top: 25px;
+    border: none !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0 2px;
+    &.active {
+      height: 35px !important;
+      background: #1d1f21 !important;
+      &:after {
+        background: none !important;
+      }
+      .title {
+        color: #fff;
+      }
+    }
+    .title {
+      color: #222;
+    }
+    .close-icon {
+      top: 10px !important;
+      color: #aaa;
+      cursor: pointer;
+    }
+  }
+}
+
+//
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  color: #fff;
+  .editor-contents {
+    margin-top: 10px;
+    .scroll-view {
+      .lines {
+      }
+    }
+  }
+}
+
+.gutter-container {
+  margin-right: 6px !important;
+}
+
+.item-views {
+  margin-top: 60px;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  border-color: red;
+}
