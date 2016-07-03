@@ -102,40 +102,44 @@ atom-workspace-axis {
   box-shadow: none !important;
 }
 
-.tab-bar {
-  height: 60px !important;
-  background: #2c4556 !important;
-  padding-left: 30px;
-  border: 0px !important;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  .tab {
-    height: 35px !important;
-    padding: 4px 5px 10px 15px !important;
-    background: #ddd !important;
-    top: 25px;
-    border: none !important;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    margin: 0 2px;
-    &.active {
+atom-pane {
+  overflow: scroll !important;
+  // background: #1d1f21;
+  .tab-bar {
+    height: 60px !important;
+    background: #2c4556 !important;
+    padding-left: 30px;
+    border: 0px !important;
+    z-index: 999;
+    width: 2800px;
+    overflow: scroll;
+    .tab {
       height: 35px !important;
-      background: #1d1f21 !important;
-      &:after {
-        background: none !important;
+      padding: 4px 5px 10px 15px !important;
+      background: #ddd !important;
+      top: 25px;
+      border: none !important;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin: 0 2px;
+      &.active {
+        height: 35px !important;
+        background: #1d1f21 !important;
+        &:after {
+          background: none !important;
+        }
+        .title {
+          color: #fff;
+        }
       }
       .title {
-        color: #fff;
+        color: #222;
       }
-    }
-    .title {
-      color: #222;
-    }
-    .close-icon {
-      top: 10px !important;
-      color: #aaa;
-      cursor: pointer;
+      .close-icon {
+        top: 10px !important;
+        color: #aaa;
+        cursor: pointer;
+      }
     }
   }
 }
