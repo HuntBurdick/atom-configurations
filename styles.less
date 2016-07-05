@@ -103,7 +103,8 @@ atom-workspace-axis {
 }
 
 atom-pane {
-  overflow: scroll !important;
+  overflow-y: hidden !important;
+  overflow-x: scroll !important;
   // background: #1d1f21;
   .tab-bar {
     height: 60px !important;
@@ -112,7 +113,8 @@ atom-pane {
     border: 0px !important;
     z-index: 999;
     width: 2800px;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     .tab {
       height: 35px !important;
       padding: 4px 5px 10px 15px !important;
